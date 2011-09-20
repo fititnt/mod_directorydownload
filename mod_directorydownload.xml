@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    method="upgrade"
+    version="1.6">
+    <name>mod_directorydownload</name>
+    <author>Emerson Rocha Luiz</author>
+    <creationDate>August 2011</creationDate>
+    <copyright>Copyright (C) 2005 - 2011 Webdesign Assessoria em Tecnologia da Informacao.</copyright>
+    <license>GNU General Public License version 3</license>
+    <authorEmail>emerson@webdesign.eng.br</authorEmail>
+    <authorUrl>http://fititnt.org</authorUrl>
+    <version>0.1beta</version>
+    <description>MOD_DIRECTORYDOWNLOAD_DESCRIPTION</description>
+    <files>
+        <filename module="mod_directorydownload">mod_directorydownload.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>readme.txt</filename>
+        <filename>changelog.txt</filename>
+        <folder>tmpl</folder>
+        <folder>languages</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_directorydownload.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_directorydownload.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="path"
+                    type="text"
+                    site="45"
+                    label="MOD_DIRECTORYDOWNLOAD_PATH_LABEL"
+                    description="MOD_DIRECTORYDOWNLOAD_PATH_DESC"
+                    default="">
+                </field>
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_LABEL"
+                    description="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_DESC"
+                    default="">
+                </field>
+                <field
+                    name="modbefore"
+                    type="textarea"
+                    cols="45"
+                    rows="8"
+                    label="MOD_DIRECTORYDOWNLOAD_MODBEFORE_LABEL"
+                    description="MOD_DIRECTORYDOWNLOAD_MODBEFORE_DESC">
+                </field>
+                <field
+                    name="modafter"
+                    type="textarea"
+                    cols="45"
+                    rows="8"
+                    label="MOD_DIRECTORYDOWNLOAD_MODAFTER_LABEL"
+                    description="MOD_DIRECTORYDOWNLOAD_MODAFTER_DESC">
+                </field> 
+            </fieldset>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
