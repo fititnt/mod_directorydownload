@@ -10,18 +10,18 @@
     <license>GNU General Public License version 3</license>
     <authorEmail>emerson@webdesign.eng.br</authorEmail>
     <authorUrl>http://fititnt.org</authorUrl>
-    <version>0.1beta</version>
+    <version>0.2alpha</version>
     <description>MOD_DIRECTORYDOWNLOAD_DESCRIPTION</description>
     <files>
         <filename module="mod_directorydownload">mod_directorydownload.php</filename>
         <filename>helper.php</filename>
         <filename>index.html</filename>
         <filename>readme.txt</filename>
-        <filename>changelog.txt</filename>
+        <filename>license.txt</filename>
         <folder>tmpl</folder>
-        <folder>languages</folder>
+        <folder>language</folder>
     </files>
-    <languages folder="languages">
+    <languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_directorydownload.ini</language>
         <language tag="en-GB">en-GB/en-GB.mod_directorydownload.sys.ini</language>
     </languages>
@@ -34,13 +34,6 @@
                     site="45"
                     label="MOD_DIRECTORYDOWNLOAD_PATH_LABEL"
                     description="MOD_DIRECTORYDOWNLOAD_PATH_DESC"
-                    default="">
-                </field>
-                <field
-                    name="moduleclass_sfx"
-                    type="text"
-                    label="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_LABEL"
-                    description="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_DESC"
                     default="">
                 </field>
                 <field
@@ -58,8 +51,23 @@
                     rows="8"
                     label="MOD_DIRECTORYDOWNLOAD_MODAFTER_LABEL"
                     description="MOD_DIRECTORYDOWNLOAD_MODAFTER_DESC">
-                </field> 
+                </field>
             </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_LABEL"
+                    description="MOD_DIRECTORYDOWNLOAD_MODULECLASSSFX_DESC"
+                    default="">
+                </field>
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    default="default" 
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC">
+                </field>
             </fieldset>
         </fields>
     </config>
